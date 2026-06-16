@@ -90,22 +90,7 @@ export default function LandingPage() {
               Como sua consultora, eu faço esse trabalho antes de você sequer agendar uma visita.
               Você recebe apenas o que <strong className="text-foreground">faz sentido para o seu patrimônio</strong>.
             </p>
-            <div className="mt-10 flex items-center gap-4">
-              <img
-                src={luToledo}
-                alt="Lu Toledo, corretora de imóveis CRECI 139.131"
-                loading="lazy"
-                width={80}
-                height={80}
-                className="h-16 w-16 rounded-full object-cover ring-2 ring-gold ring-offset-2 ring-offset-white"
-              />
-              <div>
-                <p className="font-display all-caps text-sm">Lu Toledo</p>
-                <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
-                  Corretora · CRECI 139.131
-                </p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
