@@ -239,8 +239,29 @@ export default function LandingPage() {
           <div>
             <p className="all-caps mb-4 text-xs text-gold">Social</p>
             <div className="flex gap-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest hover:text-gold">Instagram</a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest hover:text-gold">LinkedIn</a>
+              <a href="https://instagram.com/lutoledo.imoveis" target="_blank" rel="noopener noreferrer">
+                <img 
+                  src="https://www.svgrepo.com/show/424911/instagram-logo-facebook-2.svg" 
+                  alt="Instagram"
+                  className="w-5 h-5 hover:opacity-70"
+                />
+              </a>
+
+              <a href="https://www.facebook.com/lucianatoledoimoveis" target="_blank" rel="noopener noreferrer">
+                <img 
+                  src="https://www.svgrepo.com/show/424922/facebook-logo-meta-2.svg" 
+                  alt="Facebook"
+                  className="w-5 h-5 hover:opacity-70"
+                />
+              </a>
+
+              <a href="https://wa.me/SEUNUMERO" target="_blank" rel="noopener noreferrer">
+                <img 
+                  src="https://www.svgrepo.com/show/79107/whatsapp-logo-variant.svg" 
+                  alt="WhatsApp"
+                  className="w-5 h-5 hover:opacity-70"
+                />
+              </a>
             </div>
           </div>
         </div>
