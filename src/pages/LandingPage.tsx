@@ -64,7 +64,7 @@ export default function LandingPage() {
         <div className="mx-auto grid max-w-6xl items-center gap-16 px-6 md:grid-cols-2">
           <div>
             <img
-              src={interiorMinimal}
+              src={luToledo}
               alt="Interior minimalista de alto padrão"
               loading="lazy"
               width={1600}
@@ -90,21 +90,14 @@ export default function LandingPage() {
               Como sua consultora, eu faço esse trabalho antes de você sequer agendar uma visita.
               Você recebe apenas o que <strong className="text-foreground">faz sentido para o seu patrimônio</strong>.
             </p>
-            <div className="mt-10 flex items-center gap-4">
-              <img
-                src={luToledo}
-                alt="Lu Toledo, corretora de imóveis CRECI 139.131"
-                loading="lazy"
-                width={80}
-                height={80}
-                className="h-16 w-16 rounded-full object-cover ring-2 ring-gold ring-offset-2 ring-offset-white"
-              />
-              <div>
-                <p className="font-display all-caps text-sm">Lu Toledo</p>
-                <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
-                  Corretora · CRECI 139.131
-                </p>
-              </div>
+            <div className="mt-10">
+               <p className="font-display all-caps text-sm">Lu Toledo</p>
+              <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                Corretora credenciada
+              </p>
+              <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                CRECI 139.131
+              </p>
             </div>
           </div>
         </div>
