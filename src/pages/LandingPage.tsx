@@ -1,0 +1,306 @@
+import { WhatsAppButton } from '@/components/WhatsAppButton'
+import { LeadForm } from '@/components/LeadForm'
+import heroMansion from '@/assets/hero-mansion.jpg'
+import interiorMinimal from '@/assets/interior-minimal.jpg'
+import condoEntrance from '@/assets/condo-entrance.jpg'
+import luToledo from '@/assets/lu-toledo.jpg'
+
+export default function LandingPage() {
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      {/* HERO */}
+      <header className="relative h-[100svh] min-h-[640px] overflow-hidden bg-deep">
+        <div className="absolute inset-0">
+          <img
+            src={heroMansion}
+            alt="Mansão moderna de alto padrão em condomínio fechado de Limeira"
+            className="kenburns h-full w-full object-cover opacity-70"
+            width={1920}
+            height={1280}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                'linear-gradient(180deg, rgba(30,40,55,0.55) 0%, rgba(25,35,50,0.45) 50%, rgba(20,28,42,0.85) 100%)',
+            }}
+          />
+        </div>
+
+        <nav className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-6 py-7 text-white">
+          <div className="flex items-baseline gap-3">
+            <span className="font-serif text-2xl italic text-gold">Lu</span>
+            <span className="all-caps text-sm text-white">Toledo</span>
+          </div>
+          <span className="hidden text-xs tracking-[0.35em] text-white/70 sm:block">
+            CRECI 139.131 · LIMEIRA / SP
+          </span>
+        </nav>
+
+        <div className="relative z-10 mx-auto flex h-[calc(100%-96px)] max-w-7xl flex-col justify-center px-6">
+          <div className="max-w-3xl fade-up">
+            <p className="eyebrow mb-6"><span className="gold-line" />Imóveis de Alto Padrão · Limeira</p>
+            <h1 className="font-display text-4xl uppercase leading-[1.05] tracking-wider text-white sm:text-5xl md:text-6xl lg:text-7xl">
+              Onde a <span className="font-serif italic normal-case tracking-normal text-gold">exclusividade</span> encontra o seu novo endereço em Limeira
+            </h1>
+            <p className="mt-8 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+              Curadoria estratégica de imóveis premium em condomínios fechados.
+              Mais de 10 anos transformando investimentos em patrimônios extraordinários.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a href="#form" className="btn-primary">Quero Conhecer a Seleção</a>
+              <a href="#oferta" className="btn-ghost">Guia Exclusivo 2024/25</a>
+            </div>
+          </div>
+        </div>
+
+        <div className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 text-[10px] uppercase tracking-[0.4em] text-white/60">
+          Role para descobrir
+        </div>
+      </header>
+
+      {/* DOR / SOLUÇÃO */}
+      <section className="relative bg-background py-24 md:py-32">
+        <div className="mx-auto grid max-w-6xl items-center gap-16 px-6 md:grid-cols-2">
+          <div>
+            <img
+              src={interiorMinimal}
+              alt="Interior minimalista de alto padrão"
+              loading="lazy"
+              width={1600}
+              height={1200}
+              className="aspect-[5/6] w-full object-cover shadow-luxe"
+            />
+          </div>
+          <div>
+            <p className="eyebrow mb-5"><span className="gold-line" />A Realidade</p>
+            <h2 className="text-3xl uppercase leading-tight md:text-4xl">
+              Encontrar o imóvel certo em Limeira
+              <span className="block font-serif italic normal-case tracking-normal text-terracotta">
+                não deveria ser exaustivo.
+              </span>
+            </h2>
+            <div className="hairline my-8 max-w-[120px]" />
+            <p className="text-lg leading-relaxed text-muted-foreground">
+              Microrregiões seguras, valorização real, vizinhança alinhada ao seu estilo de vida.
+              A maioria das ofertas no mercado não passa por esse filtro — e o custo de uma decisão
+              errada em alto padrão é alto demais.
+            </p>
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              Como sua consultora, eu faço esse trabalho antes de você sequer agendar uma visita.
+              Você recebe apenas o que <strong className="text-foreground">faz sentido para o seu patrimônio</strong>.
+            </p>
+            <div className="mt-10 flex items-center gap-4">
+              <img
+                src={luToledo}
+                alt="Lu Toledo, corretora de imóveis CRECI 139.131"
+                loading="lazy"
+                width={80}
+                height={80}
+                className="h-16 w-16 rounded-full object-cover ring-2 ring-gold ring-offset-2 ring-offset-white"
+              />
+              <div>
+                <p className="font-display all-caps text-sm">Lu Toledo</p>
+                <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                  Corretora · CRECI 139.131
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DIFERENCIAIS */}
+      <section className="bg-deep py-24 text-white md:py-32">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="mb-16 text-center">
+            <p className="eyebrow mb-4 justify-center">Por que Lu Toledo</p>
+            <h2 className="font-display text-3xl uppercase leading-tight md:text-5xl">
+              Quatro pilares de
+              <span className="font-serif italic normal-case tracking-normal text-gold"> consultoria premium</span>
+            </h2>
+          </div>
+
+          <div className="grid gap-px bg-white/10 md:grid-cols-2 lg:grid-cols-4">
+            {DIFERENCIAIS.map((d) => (
+              <div key={d.title} className="group bg-deep p-10 transition-colors hover:bg-[#34495e]">
+                <div className="mb-6 text-gold">{d.icon}</div>
+                <h3 className="all-caps mb-3 text-sm text-white">{d.title}</h3>
+                <p className="text-sm leading-relaxed text-white/65">{d.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROVA SOCIAL */}
+      <section className="bg-background py-24 md:py-28">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="grid gap-12 sm:grid-cols-2">
+            <Stat number="150+" label="Famílias atendidas com curadoria exclusiva" />
+            <Stat number="10+" label="Anos transformando investimentos em patrimônio" />
+          </div>
+          <div className="hairline mt-16" />
+          <p className="mt-10 text-center font-serif text-xl italic leading-relaxed text-muted-foreground md:text-2xl">
+            "A Lu enxerga o imóvel certo antes mesmo de a gente saber o que estava procurando.
+            Negociação impecável e total transparência."
+          </p>
+          <p className="mt-6 text-center text-xs uppercase tracking-[0.3em] text-muted-foreground">
+            — Família M., Residencial Premium · Limeira
+          </p>
+        </div>
+      </section>
+
+      {/* OFERTA */}
+      <section id="oferta" className="relative overflow-hidden py-24 md:py-32 bg-deep">
+        <img
+          src={condoEntrance}
+          alt="Entrada de condomínio fechado de alto padrão em Limeira"
+          loading="lazy"
+          width={1600}
+          height={1200}
+          className="absolute inset-0 h-full w-full object-cover opacity-20"
+        />
+        <div className="relative mx-auto max-w-5xl px-6">
+          <div className="mx-auto max-w-3xl border border-gold/40 bg-deep/80 p-10 backdrop-blur-sm shadow-luxe md:p-16">
+            <p className="eyebrow mb-5"><span className="gold-line" />Material Exclusivo · Edição Limitada</p>
+            <h2 className="font-display text-3xl uppercase leading-tight text-white md:text-4xl">
+              Guia Exclusivo:
+              <span className="block font-serif italic normal-case tracking-normal text-gold">
+                As 10 propriedades mais desejadas
+              </span>
+              de Limeira em 2024/2025
+            </h2>
+            <ul className="mt-8 space-y-3 text-white/75">
+              {[
+                'Análise de microrregiões com maior potencial de valorização',
+                'Condomínios mapeados por perfil de morador e segurança',
+                'Projeções de retorno alinhadas ao Ciclo Selic 2026',
+                'Acesso antecipado a imóveis fora do portal',
+              ].map((t) => (
+                <li key={t} className="flex gap-3 text-sm md:text-base">
+                  <span className="mt-2 h-px w-5 flex-shrink-0 bg-gold" />
+                  {t}
+                </li>
+              ))}
+            </ul>
+            <a href="#form" className="btn-primary mt-10">Quero o Guia Exclusivo</a>
+          </div>
+        </div>
+      </section>
+
+      {/* FORMULÁRIO */}
+      <section id="form" className="bg-background py-24 md:py-32">
+        <div className="mx-auto grid max-w-6xl gap-16 px-6 md:grid-cols-[1fr_1.2fr]">
+          <div>
+            <p className="eyebrow mb-5"><span className="gold-line" />Qualificação</p>
+            <h2 className="text-3xl uppercase leading-tight md:text-4xl">
+              Vamos construir sua
+              <span className="block font-serif italic normal-case tracking-normal text-terracotta">
+                curadoria personalizada
+              </span>
+            </h2>
+            <div className="hairline my-8 max-w-[120px]" />
+            <p className="text-muted-foreground">
+              Preencha os campos abaixo. Em até 2 horas você recebe no WhatsApp uma seleção feita
+              à mão para o seu perfil — sem listagens genéricas, sem pressão de venda.
+            </p>
+            <div className="mt-10 space-y-3 text-sm text-muted-foreground">
+              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> Atendimento consultivo 1:1</p>
+              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> Sigilo absoluto das informações</p>
+              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> Resposta em até 2h úteis</p>
+            </div>
+          </div>
+          <div className="bg-card p-8 shadow-soft md:p-12">
+            <LeadForm />
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-deep py-16 text-white/80">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-3">
+          <div>
+            <div className="flex items-baseline gap-3">
+              <span className="font-serif text-3xl italic text-gold">Lu</span>
+              <span className="all-caps text-base text-white">Toledo</span>
+            </div>
+            <p className="mt-4 text-sm leading-relaxed text-white/60">
+              Consultoria especializada em imóveis de alto padrão em Limeira e região.
+            </p>
+            <p className="mt-4 text-xs uppercase tracking-[0.3em] text-gold">CRECI 139.131</p>
+          </div>
+          <div>
+            <p className="all-caps mb-4 text-xs text-gold">Contato</p>
+            <p className="text-sm">WhatsApp · (19) 97415-9585</p>
+            <p className="mt-2 text-sm">contato@lutoledo.com.br</p>
+            <p className="mt-2 text-sm">Limeira / SP</p>
+          </div>
+          <div>
+            <p className="all-caps mb-4 text-xs text-gold">Social</p>
+            <div className="flex gap-4">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest hover:text-gold">Instagram</a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest hover:text-gold">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div className="mx-auto mt-12 max-w-6xl border-t border-white/10 px-6 pt-6 text-center text-xs text-white/40">
+          © {new Date().getFullYear()} Lu Toledo · Corretora de Imóveis · Todos os direitos reservados.
+        </div>
+      </footer>
+
+      <WhatsAppButton />
+    </div>
+  )
+}
+
+function Stat({ number, label }: { number: string; label: string }) {
+  return (
+    <div className="text-center">
+      <div className="font-serif text-6xl text-terracotta md:text-7xl">{number}</div>
+      <div className="hairline mx-auto my-5 max-w-[80px]" />
+      <p className="all-caps text-xs text-muted-foreground md:text-sm">{label}</p>
+    </div>
+  )
+}
+
+const DIFERENCIAIS = [
+  {
+    title: 'Curadoria Especializada',
+    text: 'Cada imóvel passa por análise técnica, jurídica e de potencial — você só conhece o que merece sua atenção.',
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round">
+        <path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5L12 2z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Segurança Inteligente',
+    text: 'Condomínios mapeados por padrão construtivo, gestão e perfil de moradores — tranquilidade real para sua família.',
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Localização Estratégica',
+    text: 'Microrregiões em valorização, com acesso, infraestrutura e qualidade de vida pensados para os próximos 10 anos.',
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-7.5 8-13a8 8 0 10-16 0c0 5.5 8 13 8 13z" />
+        <circle cx="12" cy="9" r="2.5" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Potencial de Valorização',
+    text: 'Leitura do Ciclo Selic 2026 e do mercado de Limeira para posicionar seu investimento na curva certa.',
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 17l6-6 4 4 8-8" />
+        <path d="M14 7h7v7" />
+      </svg>
+    ),
+  },
+]
