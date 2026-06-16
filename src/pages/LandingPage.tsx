@@ -90,7 +90,12 @@ export default function LandingPage() {
               Como sua consultora, eu faço esse trabalho antes de você sequer agendar uma visita.
               Você recebe apenas o que <strong className="text-foreground">faz sentido para o seu patrimônio</strong>.
             </p>
-            
+              <div>
+                <p className="font-display all-caps text-sm">Lu Toledo</p>
+                <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                  Corretora · CRECI 139.131
+                </p>
+            </div>
           </div>
         </div>
       </section>
