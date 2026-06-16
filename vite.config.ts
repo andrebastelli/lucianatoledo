@@ -8,4 +8,11 @@ export default defineConfig({
       '@': '/src',
     },
   },
+  server: {
+    allowedHosts: [
+      'sb-6e2b6yqu3ynn.vercel.run',
+      'localhost',
+      '127.0.0.1',
+    ],
+  },
 })
