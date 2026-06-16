@@ -64,7 +64,7 @@ export default function LandingPage() {
         <div className="mx-auto grid max-w-6xl items-center gap-16 px-6 md:grid-cols-2">
           <div>
             <img
-              src={interiorMinimal}
+              src={luToledo}
               alt="Interior minimalista de alto padrão"
               loading="lazy"
               width={1600}
