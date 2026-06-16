@@ -91,6 +91,7 @@ export default function LandingPage() {
               Você recebe apenas o que <strong className="text-foreground">faz sentido para o seu patrimônio</strong>.
             </p>
             <div className="mt-10">
+               <p className="font-display all-caps text-sm">Lu Toledo</p>
               <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
                 Corretora credenciada · CRECI 139.131
               </p>
