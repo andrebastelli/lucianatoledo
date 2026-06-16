@@ -239,9 +239,47 @@ export default function LandingPage() {
           <div>
             <p className="all-caps mb-4 text-xs text-gold">Social</p>
             <div className="flex gap-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest hover:text-gold">Instagram</a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest hover:text-gold">LinkedIn</a>
-            </div>
+
+  {/* Instagram */}
+  <a 
+    href="https://instagram.com/lutoledo.imoveis" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+    className="text-[#C9A96E] hover:text-[#FAF7F4] transition-colors"
+  >
+    <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+      <path d="M7.75 2h8.5C19.99 2 22 4.01 22 7.75v8.5C22 19.99 19.99 22 16.25 22h-8.5C4.01 22 2 19.99 2 16.25v-8.5C2 4.01 4.01 2 7.75 2zm0 2C5.68 4 4 5.68 4 7.75v8.5C4 18.32 5.68 20 7.75 20h8.5c2.07 0 3.75-1.68 3.75-3.75v-8.5C20 5.68 18.32 4 16.25 4h-8.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.75-2.75a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"/>
+    </svg>
+  </a>
+
+  {/* Facebook */}
+  <a 
+    href="https://www.facebook.com/lucianatoledoimoveis" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+    className="text-[#C9A96E] hover:text-[#FAF7F4] transition-colors"
+  >
+    <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+      <path d="M13 22v-9h3l1-4h-4V7c0-1.03.28-1.73 1.8-1.73H17V2.14C16.65 2.09 15.46 2 14.1 2 11.24 2 9.5 3.7 9.5 6.84V9H7v4h2.5v9H13z"/>
+    </svg>
+  </a>
+
+  {/* WhatsApp */}
+  <a 
+    href="https://wa.me/SEUNUMERO" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+    className="text-[#C9A96E] hover:text-[#FAF7F4] transition-colors"
+  >
+    <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
+      <path d="M12.04 2C6.58 2 2.16 6.42 2.16 11.88c0 1.87.5 3.68 1.46 5.26L2 22l4.97-1.6c1.54.84 3.27 1.28 5.07 1.28h.01c5.46 0 9.88-4.42 9.88-9.88S17.5 2 12.04 2zm0 17.96c-1.6 0-3.17-.43-4.54-1.25l-.33-.2-2.95.95.96-2.88-.21-.34a7.94 7.94 0 01-1.23-4.3c0-4.41 3.59-8 8-8 4.42 0 8 3.59 8 8 0 4.42-3.58 8.02-8 8.02zm4.39-5.99c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.02-.37.1-.49.1-.1.24-.26.36-.39.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.43h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.1.15 1.52.09.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/>
+    </svg>
+  </a>
+
+</div>
           </div>
         </div>
         <div className="mx-auto mt-12 max-w-6xl border-t border-white/10 px-6 pt-6 text-center text-xs text-white/40">
