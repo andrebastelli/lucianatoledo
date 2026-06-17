@@ -234,7 +234,7 @@ export default function LandingPage() {
 
   {/* Instagram */}
   <a 
-    href="https://instagram.com/lutoledo.imoveis" 
+    href="https://instagram.com/luntoledo" 
     target="_blank" 
     rel="noopener noreferrer"
     aria-label="Instagram"
