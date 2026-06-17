@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 const SHEETS_ENDPOINT =
   import.meta.env.VITE_SHEETS_ENDPOINT ||
-  'https://script.google.com/macros/s/REPLACE_WITH_DEPLOYED_SCRIPT_ID/exec'
+  'https://script.google.com/macros/s/AKfycbycWA6vMg4mB6jj-kDPq2oEFU1aqapfRPTEmsAIulJfZrxqk3d6o6Up5J5vbiGQfRoz/exec'
 
 export function LeadForm() {
   const navigate = useNavigate()
