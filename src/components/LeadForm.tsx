@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 const SHEETS_ENDPOINT =
   import.meta.env.VITE_SHEETS_ENDPOINT ||
-  'https://script.google.com/macros/s/REPLACE_WITH_DEPLOYED_SCRIPT_ID/exec'
+  'https://script.google.com/macros/s/AKfycbycWA6vMg4mB6jj-kDPq2oEFU1aqapfRPTEmsAIulJfZrxqk3d6o6Up5J5vbiGQfRoz/exec'
 
 export function LeadForm() {
   const navigate = useNavigate()
@@ -36,7 +36,7 @@ export function LeadForm() {
         </label>
         <label className="block">
           <span className="eyebrow block mb-1">WhatsApp</span>
-          <input name="whatsapp" required type="tel" className="luxe-input" placeholder="(19) 9 0000-0000" />
+          <input name="telefone" required type="tel" className="luxe-input" placeholder="(19) 9 0000-0000" />
         </label>
       </div>
       <label className="block">

@@ -1,7 +1,6 @@
 import { WhatsAppButton } from '@/components/WhatsAppButton'
 import { LeadForm } from '@/components/LeadForm'
 import heroMansion from '@/assets/hero-mansion.jpg'
-import interiorMinimal from '@/assets/interior-minimal.jpg'
 import condoEntrance from '@/assets/condo-entrance.jpg'
 import luToledo from '@/assets/lu-toledo.jpg'
 
@@ -235,7 +234,7 @@ export default function LandingPage() {
 
   {/* Instagram */}
   <a 
-    href="https://instagram.com/lutoledo.imoveis" 
+    href="https://instagram.com/luntoledo" 
     target="_blank" 
     rel="noopener noreferrer"
     aria-label="Instagram"
@@ -261,7 +260,7 @@ export default function LandingPage() {
 
   {/* WhatsApp */}
   <a 
-    href="https://wa.me/SEUNUMERO" 
+    href="#form" 
     target="_blank" 
     rel="noopener noreferrer"
     aria-label="WhatsApp"
