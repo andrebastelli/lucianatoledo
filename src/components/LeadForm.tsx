@@ -36,7 +36,7 @@ export function LeadForm() {
         </label>
         <label className="block">
           <span className="eyebrow block mb-1">WhatsApp</span>
-          <input name="whatsapp" required type="tel" className="luxe-input" placeholder="(19) 9 0000-0000" />
+          <input name="telefone" required type="tel" className="luxe-input" placeholder="(19) 9 0000-0000" />
         </label>
       </div>
       <label className="block">
