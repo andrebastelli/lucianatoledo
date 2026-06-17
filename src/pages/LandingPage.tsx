@@ -1,7 +1,6 @@
 import { WhatsAppButton } from '@/components/WhatsAppButton'
 import { LeadForm } from '@/components/LeadForm'
 import heroMansion from '@/assets/hero-mansion.jpg'
-import interiorMinimal from '@/assets/interior-minimal.jpg'
 import condoEntrance from '@/assets/condo-entrance.jpg'
 import luToledo from '@/assets/lu-toledo.jpg'
 
