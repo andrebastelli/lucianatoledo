@@ -260,7 +260,7 @@ export default function LandingPage() {
 
   {/* WhatsApp */}
   <a 
-    href="https://wa.me/SEUNUMERO" 
+    href="#form" 
     target="_blank" 
     rel="noopener noreferrer"
     aria-label="WhatsApp"
