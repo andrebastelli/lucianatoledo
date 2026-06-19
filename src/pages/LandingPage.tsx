@@ -1,5 +1,6 @@
 import { WhatsAppButton } from '@/components/WhatsAppButton'
 import { LeadForm } from '@/components/LeadForm'
+import { HousesGallery } from '@/components/HousesGallery'
 import heroMansion from '@/assets/hero-mansion.jpg'
 import condoEntrance from '@/assets/condo-entrance.jpg'
 import luToledo from '@/assets/lu-toledo.jpg'
@@ -143,7 +144,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* OFERTA */}
+      {/* OFERTA / GALERIA DE CASAS */}
       <section id="oferta" className="relative overflow-hidden py-24 md:py-32 bg-deep">
         <img
           src={condoEntrance}
@@ -151,33 +152,23 @@ export default function LandingPage() {
           loading="lazy"
           width={1600}
           height={1200}
-          className="absolute inset-0 h-full w-full object-cover opacity-20"
+          className="absolute inset-0 h-full w-full object-cover opacity-15"
         />
-        <div className="relative mx-auto max-w-5xl px-6">
-          <div className="mx-auto max-w-3xl border border-gold/40 bg-deep/80 p-10 backdrop-blur-sm shadow-luxe md:p-16">
-            <p className="eyebrow mb-5"><span className="gold-line" />Material Exclusivo · Edição Limitada</p>
+        <div className="relative mx-auto max-w-6xl px-6">
+          <div className="mx-auto mb-14 max-w-3xl text-center">
+            <p className="eyebrow mb-5 justify-center"><span className="gold-line" />Seleção Exclusiva · Edição Limitada</p>
             <h2 className="font-display text-3xl uppercase leading-tight text-white md:text-4xl">
-              Guia Exclusivo:
+              Galeria de
               <span className="block font-serif italic normal-case tracking-normal text-gold">
-                As 10 propriedades mais desejadas
+                casas selecionadas
               </span>
-              de Limeira em 2024/2025
+              para você conhecer
             </h2>
-            <ul className="mt-8 space-y-3 text-white/75">
-              {[
-                'Análise de microrregiões com maior potencial de valorização',
-                'Condomínios mapeados por perfil de morador e segurança',
-                'Projeções de retorno alinhadas ao Ciclo Selic 2026',
-                'Acesso antecipado a imóveis fora do portal',
-              ].map((t) => (
-                <li key={t} className="flex gap-3 text-sm md:text-base">
-                  <span className="mt-2 h-px w-5 flex-shrink-0 bg-gold" />
-                  {t}
-                </li>
-              ))}
-            </ul>
-            <a href="#form" className="btn-primary mt-10">Quero o Guia Exclusivo</a>
+            <p className="mt-6 text-white/70">
+              Quatro propriedades de alto padrão, curadas pessoalmente. Navegue pelas fotos e fale comigo no WhatsApp para receber os detalhes completos.
+            </p>
           </div>
+          <HousesGallery />
         </div>
       </section>
 
