@@ -128,23 +128,24 @@ export default function LandingPage() {
             ))}
           </div>
 
-          <div className="mt-20 rounded-lg bg-white/5 p-12 backdrop-blur-sm">
-            <h3 className="mb-12 text-center font-display text-2xl uppercase text-white md:text-3xl">
-              O que torna esta experiência exclusiva
-            </h3>
-            <div className="grid gap-8 md:grid-cols-2">
-              {EXCLUSIVIDADES.map((item) => (
-                <div key={item} className="flex gap-4">
-                  <div className="mt-1 flex-shrink-0">
-                    <svg className="h-5 w-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-white/80 leading-relaxed">{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="mt-20 rounded-lg bg-white p-12">
+  <h3 className="mb-12 text-center font-display text-2xl uppercase text-foreground md:text-3xl">
+    O que torna esta <span className="block font-serif italic normal-case tracking-normal text-gold">experiência exclusiva</span>
+  </h3>
+  <div className="grid gap-8 md:grid-cols-2">
+    {EXCLUSIVIDADES.map((item) => (
+      <div key={item} className="flex gap-4">
+        <div className="mt-1 flex-shrink-0">
+          <svg className="h-5 w-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+          </svg>
+        </div>
+        <p className="text-muted-foreground leading-relaxed">{item}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
         </div>
       </section>
 
@@ -157,31 +158,31 @@ export default function LandingPage() {
           </div>
           <div className="hairline mt-16" />
           <p className="mt-10 text-center font-serif text-xl italic leading-relaxed text-muted-foreground md:text-2xl">
-            "A Lu enxerga o imóvel certo antes mesmo de a gente saber o que estava procurando.
-            Negociação impecável e total transparência."
+            "Lu querida, passando aqui pra agradecer e te parabenizar pelo atendimento e dedicação na busca por uma nova casa pra nós...na verdade seu empenho superou todas as minhas expectativas e a casa e MUITO além do que eu imaginava.
+            Obrigada por td. Estamos amando a nova casa ❤️😉😘"
           </p>
           <p className="mt-6 text-center text-xs uppercase tracking-[0.3em] text-muted-foreground">
-            — Família M., Residencial Premium · Limeira
+            — Cliente · Limeira
           </p>
         </div>
       </section>
 
-      {/* O QUE ACREDITO */}
-      <section className="bg-deep py-24 md:py-32">
-        <div className="mx-auto max-w-4xl px-6">
-          <h2 className="mb-12 text-center font-display text-3xl uppercase text-white md:text-4xl">
-            O que acredito
-          </h2>
-          <div className="space-y-6 font-serif text-lg leading-relaxed text-white/90 md:text-xl">
-            <p>Pessoas adquirem imóveis.</p>
-            <p>Famílias constroem histórias.</p>
-            <p>Uma decisão imobiliária vai muito além de localização, arquitetura ou metragem.</p>
-            <p>Ela influencia a forma como você vive, convive, cresce e cria memórias com quem realmente importa.</p>
-            <p>Por isso, cada projeto de vida merece ser compreendido com atenção.</p>
-            <p className="pt-4 text-gold">Porque o imóvel certo não é apenas aquele que atende às suas necessidades de hoje, mas aquele que faz sentido para o futuro que você deseja construir.</p>
-          </div>
-        </div>
-      </section>
+{/* O QUE ACREDITO */}
+<section className="bg-[#D9763A] py-24 md:py-32">
+  <div className="mx-auto max-w-4xl px-6">
+    <h2 className="mb-12 text-center font-display text-3xl uppercase text-white md:text-4xl">
+      O que acredito
+    </h2>
+    <div className="space-y-6 font-serif text-lg leading-relaxed text-white/90 md:text-xl">
+      <p>Pessoas adquirem imóveis.</p>
+      <p>Famílias constroem histórias.</p>
+      <p>Uma decisão imobiliária vai muito além de localização, arquitetura ou metragem.</p>
+      <p>Ela influencia a forma como você vive, convive, cresce e cria memórias com quem realmente importa.</p>
+      <p>Por isso, cada projeto de vida merece ser compreendido com atenção.</p>
+      <p className="pt-4 font-semibold text-white">Porque o imóvel certo não é apenas aquele que atende às suas necessidades de hoje, mas aquele que faz sentido para o futuro que você deseja construir.</p>
+    </div>
+  </div>
+</section>
 
       {/* OFERTA / GALERIA DE CASAS */}
       <section id="oferta" className="relative overflow-hidden py-24 md:py-32 bg-deep">
