@@ -128,7 +128,7 @@ export default function LandingPage() {
             ))}
           </div>
 
-        <div className="mt-20 rounded-lg bg-white p-12">
+        <div className="mt-20 rounded-lg bg-white p-12 shadow-2xl ring-1 ring-white/20">
   <h3 className="mb-12 text-center font-display text-2xl uppercase text-foreground md:text-3xl">
     O que torna esta <span className="block font-serif italic normal-case tracking-normal text-gold">experiência exclusiva</span>
   </h3>
@@ -168,18 +168,58 @@ export default function LandingPage() {
       </section>
 
 {/* O QUE ACREDITO */}
-<section className="bg-[#D9763A] py-24 md:py-32">
-  <div className="mx-auto max-w-4xl px-6">
-    <h2 className="mb-12 text-center font-display text-3xl uppercase text-white md:text-4xl">
-      O que acredito
-    </h2>
-    <div className="space-y-6 font-serif text-lg leading-relaxed text-white/90 md:text-xl">
-      <p>Pessoas adquirem imóveis.</p>
-      <p>Famílias constroem histórias.</p>
-      <p>Uma decisão imobiliária vai muito além de localização, arquitetura ou metragem.</p>
-      <p>Ela influencia a forma como você vive, convive, cresce e cria memórias com quem realmente importa.</p>
-      <p>Por isso, cada projeto de vida merece ser compreendido com atenção.</p>
-      <p className="pt-4 font-semibold text-white">Porque o imóvel certo não é apenas aquele que atende às suas necessidades de hoje, mas aquele que faz sentido para o futuro que você deseja construir.</p>
+<section className="bg-terracotta py-24 md:py-32">
+  <div className="mx-auto max-w-6xl px-6">
+    <div className="rounded-lg bg-white p-12 shadow-2xl ring-1 ring-white/20">
+      <h3 className="mb-12 text-center font-display text-2xl uppercase text-[#2C3E50] md:text-3xl">
+        O que
+        <span className="block font-serif italic normal-case tracking-normal text-gold"> acredito</span>
+      </h3>
+      <div className="space-y-6 font-serif text-lg leading-relaxed text-[#2C3E50] md:text-xl">
+  <div className="flex gap-4">
+    <div className="mt-1 flex-shrink-0">
+      <svg className="h-5 w-5 text-[#2C3E50]" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+      </svg>
+    </div>
+    <p>Pessoas adquirem imóveis.</p>
+  </div>
+  <div className="flex gap-4">
+    <div className="mt-1 flex-shrink-0">
+      <svg className="h-5 w-5 text-[#2C3E50]" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+      </svg>
+    </div>
+    <p>Famílias constroem histórias.</p>
+  </div>
+  <div className="flex gap-4">
+    <div className="mt-1 flex-shrink-0">
+      <svg className="h-5 w-5 text-[#2C3E50]" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+      </svg>
+    </div>
+    <p>Uma decisão imobiliária vai muito além de localização, arquitetura ou metragem.</p>
+  </div>
+  <div className="flex gap-4">
+    <div className="mt-1 flex-shrink-0">
+      <svg className="h-5 w-5 text-[#2C3E50]" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+      </svg>
+    </div>
+    <p>Ela influencia a forma como você vive, convive, cresce e cria memórias com quem realmente importa.</p>
+  </div>
+  <div className="flex gap-4">
+    <div className="mt-1 flex-shrink-0">
+      <svg className="h-5 w-5 text-[#2C3E50]" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+      </svg>
+    </div>
+    <p>Por isso, cada projeto de vida merece ser compreendido com atenção.</p>
+  </div>
+  <p className="pt-4 text-xl font-semibold md:text-2xl">
+    Porque o imóvel certo não é apenas aquele que atende às suas necessidades de hoje, mas aquele que faz sentido para o futuro que você deseja construir.
+  </p>
+</div>
     </div>
   </div>
 </section>
@@ -216,22 +256,20 @@ export default function LandingPage() {
       <section id="form" className="bg-background py-24 md:py-32">
         <div className="mx-auto grid max-w-6xl gap-16 px-6 md:grid-cols-[1fr_1.2fr]">
           <div>
-            <p className="eyebrow mb-5"><span className="gold-line" />Qualificação</p>
+            <p className="eyebrow mb-5"><span className="gold-line" />CHAMADA FINAL</p>
             <h2 className="text-3xl uppercase leading-tight md:text-4xl">
-              Vamos construir sua
+              Seu próximo capítulo merece
               <span className="block font-serif italic normal-case tracking-normal text-terracotta">
-                curadoria personalizada
+                o cenário certo.
               </span>
             </h2>
             <div className="hairline my-8 max-w-[120px]" />
             <p className="text-muted-foreground">
-              Preencha os campos abaixo. Em até 2 horas você recebe no WhatsApp uma seleção feita
-              à mão para o seu perfil — sem listagens genéricas, sem pressão de venda.
+              Vamos encontrar um imóvel que represente seus valores, seus sonhos e o futuro que você deseja construir.
             </p>
             <div className="mt-10 space-y-3 text-sm text-muted-foreground">
-              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> Atendimento consultivo 1:1</p>
-              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> Sigilo absoluto das informações</p>
-              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> Resposta em até 2h úteis</p>
+              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> Mais do que imóveis, lugares onde as melhores memórias são construídas.</p>
+              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> WhatsApp • Atendimento Personalizado</p>
             </div>
           </div>
           <div className="bg-card p-8 shadow-soft md:p-12">
