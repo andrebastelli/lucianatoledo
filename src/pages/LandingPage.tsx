@@ -247,7 +247,7 @@ export default function LandingPage() {
         />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <p className="eyebrow mb-5 justify-center"><span className="gold-line" />Seleção Exclusiva · Edição Limitada</p>
+            <p className="eyebrow mb-5 justify-center"><span className="gold-line" />Seleção Exclusiva</p>
             <h2 className="font-display text-3xl uppercase leading-tight text-white md:text-4xl">
               Galeria de
               <span className="block font-serif italic normal-case tracking-normal text-gold">
