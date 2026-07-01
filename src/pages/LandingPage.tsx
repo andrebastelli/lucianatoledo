@@ -41,7 +41,7 @@ export default function LandingPage() {
   <div className="max-w-3xl md:max-w-5xl fade-up">
     <p className="eyebrow mb-6"><span className="gold-line" />Consultoria Imobiliária de Alto Padrão</p>
 <h1 className="font-display text-4xl uppercase leading-[1.05] tracking-wider text-white sm:text-5xl md:text-6xl lg:text-7xl">
-  Mais do que <span className="font-serif italic normal-case tracking-normal text-gold">imóveis,</span> lugares onde as <span className="font-serif italic normal-case tracking-normal text-gold"> melhores&nbsp;memórias</span> são&nbsp;construídas.
+  Mais do que <span className="font-serif italic normal-case tracking-normal text-gold">imóveis,</span> lugares onde as <span className="font-serif italic normal-case tracking-normal text-gold sm:whitespace-nowrap"> melhores memórias</span> <span className="sm:whitespace-nowrap">são construídas.</span>
 </h1>
     <p className="mt-8 max-w-xl md:max-w-4xl text-base leading-relaxed text-white/80 sm:text-lg">
       Especialista em imóveis premium e condomínios fechados em Limeira.
