@@ -5,6 +5,17 @@ import heroMansion from '@/assets/hero-mansion.jpg'
 import condoEntrance from '@/assets/condo-entrance.jpg'
 import luToledo from '@/assets/lu-toledo.jpg'
 
+const EXCLUSIVIDADES = [
+  'Compreensão profunda do seu momento de vida e dos seus objetivos',
+  'Seleção estratégica de oportunidades alinhadas ao seu estilo de vida',
+  'Análise patrimonial e potencial de valorização',
+  'Acompanhamento integral durante toda a jornada',
+  'Sigilo absoluto e discrição em cada etapa',
+  'Relacionamento construído com confiança e transparência',
+  'Experiência humana aliada à inteligência emocional',
+  'Decisões imobiliárias alinhadas ao futuro que você deseja construir',
+]
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -409,15 +420,4 @@ const DIFERENCIAIS = [
       </svg>
     ),
   },
-]
-
-const EXCLUSIVIDADES = [
-  'Compreensão profunda do seu momento de vida e dos seus objetivos',
-  'Seleção estratégica de oportunidades alinhadas ao seu estilo de vida',
-  'Análise patrimonial e potencial de valorização',
-  'Acompanhamento integral durante toda a jornada',
-  'Sigilo absoluto e discrição em cada etapa',
-  'Relacionamento construído com confiança e transparência',
-  'Experiência humana aliada à inteligência emocional',
-  'Decisões imobiliárias alinhadas ao futuro que você deseja construir',
 ]
