@@ -68,7 +68,7 @@ export function LeadForm() {
       </div>
 
       <button type="submit" disabled={submitting} className="btn-primary mt-4 w-full sm:w-auto">
-        {submitting ? 'Enviando...' : 'Receber Curadoria Exclusiva'}
+        {submitting ? 'Enviando...' : 'AGENDAR CONSULTORIA EXCLUSIVA'}
       </button>
       <p className="text-xs text-muted-foreground">
         Seus dados são confidenciais. Resposta em até 2 horas via WhatsApp.

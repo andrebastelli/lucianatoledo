@@ -5,11 +5,22 @@ import heroMansion from '@/assets/hero-mansion.jpg'
 import condoEntrance from '@/assets/condo-entrance.jpg'
 import luToledo from '@/assets/lu-toledo.jpg'
 
+const EXCLUSIVIDADES = [
+  'Compreensão profunda do seu momento de vida e dos seus objetivos',
+  'Seleção estratégica de oportunidades alinhadas ao seu estilo de vida',
+  'Análise patrimonial e potencial de valorização',
+  'Acompanhamento integral durante toda a jornada',
+  'Sigilo absoluto e discrição em cada etapa',
+  'Relacionamento construído com confiança e transparência',
+  'Experiência humana aliada à inteligência emocional',
+  'Decisões imobiliárias alinhadas ao futuro que você deseja construir',
+]
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* HERO */}
-      <header className="relative h-[100svh] min-h-[640px] overflow-hidden bg-deep">
+      <header className="relative h-[100svh] min-h-[750px] overflow-hidden bg-deep">
         <div className="absolute inset-0">
           <img
             src={heroMansion}
@@ -37,19 +48,19 @@ export default function LandingPage() {
           </span>
         </nav>
 
-        <div className="relative z-10 mx-auto flex h-[calc(100%-96px)] max-w-7xl flex-col justify-center px-6">
-          <div className="max-w-3xl fade-up">
-            <p className="eyebrow mb-6"><span className="gold-line" />Imóveis de Alto Padrão · Limeira</p>
-            <h1 className="font-display text-4xl uppercase leading-[1.05] tracking-wider text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              Onde a <span className="font-serif italic normal-case tracking-normal text-gold">exclusividade</span> encontra o seu novo endereço em Limeira
-            </h1>
-            <p className="mt-8 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-              Curadoria estratégica de imóveis premium em condomínios fechados.
-              Mais de 10 anos transformando investimentos em patrimônios extraordinários.
-            </p>
+        <div className="relative z-10 mx-auto flex h-[calc(100%-96px)] max-w-7xl flex-col justify-center px-6 pb-16 sm:pb-0">
+  <div className="max-w-3xl md:max-w-5xl fade-up">
+    <p className="eyebrow mb-6"><span className="gold-line" />Consultoria Imobiliária de Alto Padrão</p>
+<h1 className="font-display text-4xl uppercase leading-[1.05] tracking-wider text-white sm:text-5xl md:text-6xl lg:text-7xl">
+  Mais do que <span className="font-serif italic normal-case tracking-normal text-gold">imóveis,</span> lugares onde as <span className="font-serif italic normal-case tracking-normal text-gold sm:whitespace-nowrap"> melhores memórias</span> <span className="sm:whitespace-nowrap">são construídas.</span>
+</h1>
+    <p className="mt-8 max-w-xl md:max-w-4xl text-base leading-relaxed text-white/80 sm:text-lg">
+      Especialista em imóveis premium e condomínios fechados em Limeira.
+      Transformo a busca pelo imóvel ideal em uma jornada estratégica, segura e alinhada ao estilo de vida, aos valores e aos objetivos da sua família.
+      Porque uma casa não é apenas um endereço. É o cenário onde sua história acontece.
+    </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <a href="#form" className="btn-primary">Quero Conhecer a Seleção</a>
-              <a href="#oferta" className="btn-ghost">Guia Exclusivo 2024/25</a>
+              <a href="#form" className="btn-primary">QUERO MINHA CONSULTORIA EXCLUSIVA</a>
             </div>
           </div>
         </div>
@@ -65,30 +76,34 @@ export default function LandingPage() {
           <div>
             <img
               src={luToledo}
-              alt="Interior minimalista de alto padrão"
+              alt="Lu Toledo"
               loading="lazy"
               width={1600}
               height={1200}
-              className="aspect-[5/6] w-full object-cover shadow-luxe"
+              className="aspect-[4/6] w-full object-cover shadow-luxe"
             />
           </div>
           <div>
-            <p className="eyebrow mb-5"><span className="gold-line" />A Realidade</p>
+            <p className="eyebrow mb-5"><span className="gold-line" />SOBRE LU TOLEDO</p>
             <h2 className="text-3xl uppercase leading-tight md:text-4xl">
-              Encontrar o imóvel certo em Limeira
+              Experiência, sensibilidade
               <span className="block font-serif italic normal-case tracking-normal text-terracotta">
-                não deveria ser exaustivo.
+                e estratégia.
               </span>
             </h2>
             <div className="hairline my-8 max-w-[120px]" />
             <p className="text-lg leading-relaxed text-muted-foreground">
-              Microrregiões seguras, valorização real, vizinhança alinhada ao seu estilo de vida.
-              A maioria das ofertas no mercado não passa por esse filtro — e o custo de uma decisão
-              errada em alto padrão é alto demais.
+              Há mais de 12 anos atuando no mercado imobiliário de alto padrão, desenvolvi uma metodologia baseada em escuta ativa, comportamento humano e análise estratégica.
             </p>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Como sua consultora, eu faço esse trabalho antes de você sequer agendar uma visita.
-              Você recebe apenas o que <strong className="text-foreground">faz sentido para o seu patrimônio</strong>.
+              Minha missão vai além de apresentar imóveis.
+              <strong className="text-foreground"> Eu ajudo pessoas a encontrarem espaços que representem quem elas são hoje e quem desejam se tornar amanhã.</strong>.
+            </p>
+            <p className="text-lg leading-relaxed text-muted-foreground">
+              Com formação em Programação Neurolinguística (PNL), compreendo que cada decisão importante nasce primeiro da emoção, depois da razão.
+            </p>
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              <strong className="text-foreground"> Por isso, cada atendimento é conduzido de forma personalizada, respeitando sonhos, objetivos e momentos de vida.</strong>.
             </p>
             <div className="mt-10">
                <p className="font-display all-caps text-sm">Lu Toledo</p>
@@ -107,11 +122,11 @@ export default function LandingPage() {
       <section className="bg-deep py-24 text-white md:py-32">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mb-16 text-center">
-            <p className="eyebrow mb-4 justify-center">Por que Lu Toledo</p>
+            <p className="eyebrow mb-4 justify-center">MEU DIFERENCIAL</p>
             <h2 className="font-display text-3xl uppercase leading-tight md:text-5xl">
-              Quatro pilares de
-              <span className="font-serif italic normal-case tracking-normal text-gold"> consultoria premium</span>
-            </h2>
+  Uma consultoria construída
+  <span className="block font-serif italic normal-case tracking-normal text-gold">sobre quatro pilares</span>
+</h2>
           </div>
 
           <div className="grid gap-px bg-white/10 md:grid-cols-2 lg:grid-cols-4">
@@ -123,6 +138,25 @@ export default function LandingPage() {
               </div>
             ))}
           </div>
+
+        <div className="mt-20 rounded-lg bg-white p-12 shadow-2xl ring-1 ring-white/20">
+  <h3 className="mb-12 text-center font-display text-2xl uppercase text-foreground md:text-3xl">
+    O que torna esta <span className="block font-serif italic normal-case tracking-normal text-gold">experiência exclusiva</span>
+  </h3>
+  <div className="grid gap-8 md:grid-cols-2">
+    {EXCLUSIVIDADES.map((item) => (
+      <div key={item} className="flex gap-4">
+        <div className="mt-1 flex-shrink-0">
+          <svg className="h-5 w-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+          </svg>
+        </div>
+        <p className="text-muted-foreground leading-relaxed">{item}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
         </div>
       </section>
 
@@ -135,14 +169,71 @@ export default function LandingPage() {
           </div>
           <div className="hairline mt-16" />
           <p className="mt-10 text-center font-serif text-xl italic leading-relaxed text-muted-foreground md:text-2xl">
-            "A Lu enxerga o imóvel certo antes mesmo de a gente saber o que estava procurando.
-            Negociação impecável e total transparência."
+            "Lu querida, passando aqui pra agradecer e te parabenizar pelo atendimento e dedicação na busca por uma nova casa pra nós...na verdade seu empenho superou todas as minhas expectativas e a casa e MUITO além do que eu imaginava.
+            Obrigada por td. Estamos amando a nova casa ❤️😉😘"
           </p>
           <p className="mt-6 text-center text-xs uppercase tracking-[0.3em] text-muted-foreground">
-            — Família M., Residencial Premium · Limeira
+            — Cliente · Limeira
           </p>
         </div>
       </section>
+
+{/* O QUE ACREDITO */}
+<section className="bg-terracotta py-24 md:py-32">
+  <div className="mx-auto max-w-6xl px-6">
+    <div className="rounded-lg bg-white p-12 shadow-2xl ring-1 ring-white/20">
+      <h3 className="mb-12 text-center font-display text-2xl uppercase text-[#2C3E50] md:text-3xl">
+        O que
+        <span className="block font-serif italic normal-case tracking-normal text-gold"> acredito</span>
+      </h3>
+      <div className="space-y-6 font-serif text-lg leading-relaxed text-[#2C3E50] md:text-xl">
+  <div className="flex gap-4">
+    <div className="mt-1 flex-shrink-0">
+      <svg className="h-5 w-5 text-[#2C3E50]" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+      </svg>
+    </div>
+    <p>Pessoas adquirem imóveis.</p>
+  </div>
+  <div className="flex gap-4">
+    <div className="mt-1 flex-shrink-0">
+      <svg className="h-5 w-5 text-[#2C3E50]" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+      </svg>
+    </div>
+    <p>Famílias constroem histórias.</p>
+  </div>
+  <div className="flex gap-4">
+    <div className="mt-1 flex-shrink-0">
+      <svg className="h-5 w-5 text-[#2C3E50]" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+      </svg>
+    </div>
+    <p>Uma decisão imobiliária vai muito além de localização, arquitetura ou metragem.</p>
+  </div>
+  <div className="flex gap-4">
+    <div className="mt-1 flex-shrink-0">
+      <svg className="h-5 w-5 text-[#2C3E50]" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+      </svg>
+    </div>
+    <p>Ela influencia a forma como você vive, convive, cresce e cria memórias com quem realmente importa.</p>
+  </div>
+  <div className="flex gap-4">
+    <div className="mt-1 flex-shrink-0">
+      <svg className="h-5 w-5 text-[#2C3E50]" fill="currentColor" viewBox="0 0 20 20">
+        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+      </svg>
+    </div>
+    <p>Por isso, cada projeto de vida merece ser compreendido com atenção.</p>
+  </div>
+  <p className="pt-4 text-xl font-semibold md:text-2xl">
+    Porque o imóvel certo não é apenas aquele que atende às suas necessidades de hoje, mas aquele que faz sentido para o futuro que você deseja construir.
+  </p>
+</div>
+    </div>
+  </div>
+</section>
 
       {/* OFERTA / GALERIA DE CASAS */}
       <section id="oferta" className="relative overflow-hidden py-24 md:py-32 bg-deep">
@@ -156,7 +247,7 @@ export default function LandingPage() {
         />
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <p className="eyebrow mb-5 justify-center"><span className="gold-line" />Seleção Exclusiva · Edição Limitada</p>
+            <p className="eyebrow mb-5 justify-center"><span className="gold-line" />Seleção Exclusiva</p>
             <h2 className="font-display text-3xl uppercase leading-tight text-white md:text-4xl">
               Galeria de
               <span className="block font-serif italic normal-case tracking-normal text-gold">
@@ -176,22 +267,20 @@ export default function LandingPage() {
       <section id="form" className="bg-background py-24 md:py-32">
         <div className="mx-auto grid max-w-6xl gap-16 px-6 md:grid-cols-[1fr_1.2fr]">
           <div>
-            <p className="eyebrow mb-5"><span className="gold-line" />Qualificação</p>
+            <p className="eyebrow mb-5"><span className="gold-line" />CHAMADA FINAL</p>
             <h2 className="text-3xl uppercase leading-tight md:text-4xl">
-              Vamos construir sua
+              Seu próximo capítulo merece
               <span className="block font-serif italic normal-case tracking-normal text-terracotta">
-                curadoria personalizada
+                o cenário certo.
               </span>
             </h2>
             <div className="hairline my-8 max-w-[120px]" />
             <p className="text-muted-foreground">
-              Preencha os campos abaixo. Em até 2 horas você recebe no WhatsApp uma seleção feita
-              à mão para o seu perfil — sem listagens genéricas, sem pressão de venda.
+              Vamos encontrar um imóvel que represente seus valores, seus sonhos e o futuro que você deseja construir.
             </p>
             <div className="mt-10 space-y-3 text-sm text-muted-foreground">
-              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> Atendimento consultivo 1:1</p>
-              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> Sigilo absoluto das informações</p>
-              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> Resposta em até 2h úteis</p>
+              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> Mais do que imóveis, lugares onde as melhores memórias são construídas.</p>
+              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> WhatsApp • Atendimento Personalizado</p>
             </div>
           </div>
           <div className="bg-card p-8 shadow-soft md:p-12">
@@ -287,40 +376,47 @@ function Stat({ number, label }: { number: string; label: string }) {
 
 const DIFERENCIAIS = [
   {
-    title: 'Curadoria Especializada',
-    text: 'Cada imóvel passa por análise técnica, jurídica e de potencial — você só conhece o que merece sua atenção.',
+    title: 'Seleção Estratégica',
+    text: 'Antes de chegar até você, cada oportunidade passa por uma análise criteriosa. Assim, seu tempo é dedicado apenas a imóveis que realmente fazem sentido para sua família e seu patrimônio.',
     icon: (
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round">
-        <path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5L12 2z" />
+      // Funil de filtragem — representa a curadoria/seleção
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 4h18l-7.5 8.5V19l-3 1.5v-8L3 4z" />
       </svg>
     ),
   },
   {
-    title: 'Segurança Inteligente',
-    text: 'Condomínios mapeados por padrão construtivo, gestão e perfil de moradores — tranquilidade real para sua família.',
+    title: 'Segurança na Decisão',
+    text: 'Avaliação criteriosa de localização, potencial de valorização, perfil do condomínio e qualidade construtiva.',
     icon: (
+      // Escudo com check — segurança confirmada na decisão
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z" />
+        <path d="M9 12l2 2 4-4" />
       </svg>
     ),
   },
   {
-    title: 'Localização Estratégica',
-    text: 'Microrregiões em valorização, com acesso, infraestrutura e qualidade de vida pensados para os próximos 10 anos.',
+    title: 'Conexão Humana',
+    text: 'Antes de falar sobre imóveis, procuro entender pessoas. Porque o imóvel ideal é consequência da clareza sobre o que realmente importa para você.',
     icon: (
+      // Duas pessoas — relação/conexão humana
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 22s8-7.5 8-13a8 8 0 10-16 0c0 5.5 8 13 8 13z" />
-        <circle cx="12" cy="9" r="2.5" />
+        <circle cx="9" cy="8" r="3" />
+        <path d="M3 21v-1c0-3 2.5-5 6-5s6 2 6 5v1" />
+        <circle cx="17.5" cy="9.5" r="2.3" />
+        <path d="M15.5 21v-.8c0-2.1 1.6-3.7 3.5-3.9" />
       </svg>
     ),
   },
   {
-    title: 'Potencial de Valorização',
-    text: 'Leitura do Ciclo Selic 2026 e do mercado de Limeira para posicionar seu investimento na curva certa.',
+    title: 'Visão de Futuro',
+    text: 'Não analisamos apenas o imóvel de hoje. Construímos uma decisão que continuará fazendo sentido para você daqui a 5, 10 ou 15 anos.',
     icon: (
+      // Olho no horizonte — visão de longo prazo
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 17l6-6 4 4 8-8" />
-        <path d="M14 7h7v7" />
+        <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z" />
+        <circle cx="12" cy="12" r="2.5" />
       </svg>
     ),
   },
