@@ -166,6 +166,23 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* O QUE ACREDITO */}
+      <section className="bg-background py-24 md:py-32">
+        <div className="mx-auto max-w-4xl px-6">
+          <h2 className="mb-12 text-center font-display text-3xl uppercase text-white md:text-4xl">
+            O que acredito
+          </h2>
+          <div className="space-y-6 font-serif text-lg leading-relaxed text-white/90 md:text-xl">
+            <p>Pessoas adquirem imóveis.</p>
+            <p>Famílias constroem histórias.</p>
+            <p>Uma decisão imobiliária vai muito além de localização, arquitetura ou metragem.</p>
+            <p>Ela influencia a forma como você vive, convive, cresce e cria memórias com quem realmente importa.</p>
+            <p>Por isso, cada projeto de vida merece ser compreendido com atenção.</p>
+            <p className="pt-4 text-gold">Porque o imóvel certo não é apenas aquele que atende às suas necessidades de hoje, mas aquele que faz sentido para o futuro que você deseja construir.</p>
+          </div>
+        </div>
+      </section>
+
       {/* OFERTA / GALERIA DE CASAS */}
       <section id="oferta" className="relative overflow-hidden py-24 md:py-32 bg-deep">
         <img
