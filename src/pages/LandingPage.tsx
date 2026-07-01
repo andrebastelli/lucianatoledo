@@ -111,11 +111,11 @@ export default function LandingPage() {
       <section className="bg-deep py-24 text-white md:py-32">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mb-16 text-center">
-            <p className="eyebrow mb-4 justify-center">Por que Lu Toledo</p>
+            <p className="eyebrow mb-4 justify-center">MEU DIFERENCIAL</p>
             <h2 className="font-display text-3xl uppercase leading-tight md:text-5xl">
-              Quatro pilares de
-              <span className="font-serif italic normal-case tracking-normal text-gold"> consultoria premium</span>
-            </h2>
+  Uma consultoria construída
+  <span className="block font-serif italic normal-case tracking-normal text-gold">sobre quatro pilares</span>
+</h2>
           </div>
 
           <div className="grid gap-px bg-white/10 md:grid-cols-2 lg:grid-cols-4">
@@ -126,6 +126,24 @@ export default function LandingPage() {
                 <p className="text-sm leading-relaxed text-white/65">{d.text}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-16 border-t border-white/20 pt-16">
+            <h3 className="mb-12 text-center font-display text-2xl uppercase text-white md:text-3xl">
+              O que torna esta experiência exclusiva
+            </h3>
+            <div className="grid gap-8 md:grid-cols-2">
+              {EXCLUSIVIDADES.map((item) => (
+                <div key={item} className="flex gap-4">
+                  <div className="mt-1 flex-shrink-0">
+                    <svg className="h-5 w-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <p className="text-white/80 leading-relaxed">{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -291,41 +309,59 @@ function Stat({ number, label }: { number: string; label: string }) {
 
 const DIFERENCIAIS = [
   {
-    title: 'Curadoria Especializada',
-    text: 'Cada imóvel passa por análise técnica, jurídica e de potencial — você só conhece o que merece sua atenção.',
+    title: 'Seleção Estratégica',
+    text: 'Antes de chegar até você, cada oportunidade passa por uma análise criteriosa. Assim, seu tempo é dedicado apenas a imóveis que realmente fazem sentido para sua família e seu patrimônio.',
     icon: (
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round">
-        <path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5L12 2z" />
+      // Funil de filtragem — representa a curadoria/seleção
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 4h18l-7.5 8.5V19l-3 1.5v-8L3 4z" />
       </svg>
     ),
   },
   {
-    title: 'Segurança Inteligente',
-    text: 'Condomínios mapeados por padrão construtivo, gestão e perfil de moradores — tranquilidade real para sua família.',
+    title: 'Segurança na Decisão',
+    text: 'Avaliação criteriosa de localização, potencial de valorização, perfil do condomínio e qualidade construtiva.',
     icon: (
+      // Escudo com check — segurança confirmada na decisão
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z" />
+        <path d="M9 12l2 2 4-4" />
       </svg>
     ),
   },
   {
-    title: 'Localização Estratégica',
-    text: 'Microrregiões em valorização, com acesso, infraestrutura e qualidade de vida pensados para os próximos 10 anos.',
+    title: 'Conexão Humana',
+    text: 'Antes de falar sobre imóveis, procuro entender pessoas. Porque o imóvel ideal é consequência da clareza sobre o que realmente importa para você.',
     icon: (
+      // Duas pessoas — relação/conexão humana
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 22s8-7.5 8-13a8 8 0 10-16 0c0 5.5 8 13 8 13z" />
-        <circle cx="12" cy="9" r="2.5" />
+        <circle cx="9" cy="8" r="3" />
+        <path d="M3 21v-1c0-3 2.5-5 6-5s6 2 6 5v1" />
+        <circle cx="17.5" cy="9.5" r="2.3" />
+        <path d="M15.5 21v-.8c0-2.1 1.6-3.7 3.5-3.9" />
       </svg>
     ),
   },
   {
-    title: 'Potencial de Valorização',
-    text: 'Leitura do Ciclo Selic 2026 e do mercado de Limeira para posicionar seu investimento na curva certa.',
+    title: 'Visão de Futuro',
+    text: 'Não analisamos apenas o imóvel de hoje. Construímos uma decisão que continuará fazendo sentido para você daqui a 5, 10 ou 15 anos.',
     icon: (
+      // Olho no horizonte — visão de longo prazo
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 17l6-6 4 4 8-8" />
-        <path d="M14 7h7v7" />
+        <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z" />
+        <circle cx="12" cy="12" r="2.5" />
       </svg>
     ),
   },
+]
+
+const EXCLUSIVIDADES = [
+  'Compreensão profunda do seu momento de vida e dos seus objetivos',
+  'Seleção estratégica de oportunidades alinhadas ao seu estilo de vida',
+  'Análise patrimonial e potencial de valorização',
+  'Acompanhamento integral durante toda a jornada',
+  'Sigilo absoluto e discrição em cada etapa',
+  'Relacionamento construído com confiança e transparência',
+  'Experiência humana aliada à inteligência emocional',
+  'Decisões imobiliárias alinhadas ao futuro que você deseja construir',
 ]
