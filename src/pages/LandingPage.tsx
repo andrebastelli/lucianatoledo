@@ -65,30 +65,34 @@ export default function LandingPage() {
           <div>
             <img
               src={luToledo}
-              alt="Interior minimalista de alto padrão"
+              alt="Lu Toledo"
               loading="lazy"
               width={1600}
               height={1200}
-              className="aspect-[5/6] w-full object-cover shadow-luxe"
+              className="aspect-[4/6] w-full object-cover shadow-luxe"
             />
           </div>
           <div>
-            <p className="eyebrow mb-5"><span className="gold-line" />A Realidade</p>
+            <p className="eyebrow mb-5"><span className="gold-line" />SOBRE LU TOLEDO</p>
             <h2 className="text-3xl uppercase leading-tight md:text-4xl">
-              Encontrar o imóvel certo em Limeira
+              Experiência, sensibilidade
               <span className="block font-serif italic normal-case tracking-normal text-terracotta">
-                não deveria ser exaustivo.
+                e estratégia.
               </span>
             </h2>
             <div className="hairline my-8 max-w-[120px]" />
             <p className="text-lg leading-relaxed text-muted-foreground">
-              Microrregiões seguras, valorização real, vizinhança alinhada ao seu estilo de vida.
-              A maioria das ofertas no mercado não passa por esse filtro — e o custo de uma decisão
-              errada em alto padrão é alto demais.
+              Há mais de 12 anos atuando no mercado imobiliário de alto padrão, desenvolvi uma metodologia baseada em escuta ativa, comportamento humano e análise estratégica.
             </p>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Como sua consultora, eu faço esse trabalho antes de você sequer agendar uma visita.
-              Você recebe apenas o que <strong className="text-foreground">faz sentido para o seu patrimônio</strong>.
+              Minha missão vai além de apresentar imóveis.
+              <strong className="text-foreground"> Eu ajudo pessoas a encontrarem espaços que representem quem elas são hoje e quem desejam se tornar amanhã.</strong>.
+            </p>
+            <p className="text-lg leading-relaxed text-muted-foreground">
+              Com formação em Programação Neurolinguística (PNL), compreendo que cada decisão importante nasce primeiro da emoção, depois da razão.
+            </p>
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              <strong className="text-foreground"> Por isso, cada atendimento é conduzido de forma personalizada, respeitando sonhos, objetivos e momentos de vida.</strong>.
             </p>
             <div className="mt-10">
                <p className="font-display all-caps text-sm">Lu Toledo</p>
