@@ -167,7 +167,7 @@ export default function LandingPage() {
       </section>
 
       {/* O QUE ACREDITO */}
-      <section className="bg-background py-24 md:py-32">
+      <section className="bg-deep py-24 md:py-32">
         <div className="mx-auto max-w-4xl px-6">
           <h2 className="mb-12 text-center font-display text-3xl uppercase text-white md:text-4xl">
             O que acredito
