@@ -37,7 +37,7 @@ export default function LandingPage() {
           </span>
         </nav>
 
-        <div className="relative z-10 mx-auto flex h-[calc(100%-96px)] max-w-7xl flex-col justify-center px-6">
+        <div className="relative z-10 mx-auto flex h-[calc(100%-96px)] max-w-7xl flex-col justify-center px-6 pb-16 sm:pb-0">
   <div className="max-w-3xl md:max-w-5xl fade-up">
     <p className="eyebrow mb-6"><span className="gold-line" />Consultoria Imobiliária de Alto Padrão</p>
 <h1 className="font-display text-4xl uppercase leading-[1.05] tracking-wider text-white sm:text-5xl md:text-6xl lg:text-7xl">
