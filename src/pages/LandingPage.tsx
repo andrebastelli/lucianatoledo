@@ -183,6 +183,21 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* DEPOIMENTO */}
+      <section className="bg-white/5 py-24 md:py-32">
+        <div className="mx-auto max-w-3xl px-6">
+          <div className="rounded-lg bg-white/10 p-12 backdrop-blur-sm">
+            <p className="mb-6 font-serif text-lg leading-relaxed text-white md:text-xl">
+              Lu querida, passando aqui pra agradecer e te parabenizar pelo atendimento e dedicação na busca por uma nova casa pra nós...na verdade seu empenho superou todas as minhas expectativas e a casa e MUITO além do que eu imaginava.
+            </p>
+            <p className="font-serif text-lg leading-relaxed text-white md:text-xl">
+              Obrigada por td. Estamos amando a nova casa ❤️😉😘
+            </p>
+            <p className="mt-8 text-gold font-display uppercase tracking-wide">— Cliente satisfeita</p>
+          </div>
+        </div>
+      </section>
+
       {/* OFERTA / GALERIA DE CASAS */}
       <section id="oferta" className="relative overflow-hidden py-24 md:py-32 bg-deep">
         <img
