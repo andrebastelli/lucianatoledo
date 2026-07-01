@@ -49,7 +49,7 @@ export default function LandingPage() {
       Porque uma casa não é apenas um endereço. É o cenário onde sua história acontece.
     </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <a href="#form" className="btn-primary">Quero Conhecer a Seleção</a>
+              <a href="#form" className="btn-primary">QUERO MINHA CONSULTORIA EXCLUSIVA</a>
             </div>
           </div>
         </div>
