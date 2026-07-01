@@ -39,13 +39,18 @@ export default function LandingPage() {
 
         <div className="relative z-10 mx-auto flex h-[calc(100%-96px)] max-w-7xl flex-col justify-center px-6">
           <div className="max-w-3xl fade-up">
-            <p className="eyebrow mb-6"><span className="gold-line" />Imóveis de Alto Padrão · Limeira</p>
-            <h1 className="font-display text-4xl uppercase leading-[1.05] tracking-wider text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              Onde a <span className="font-serif italic normal-case tracking-normal text-gold">exclusividade</span> encontra o seu novo endereço em Limeira
+            <p className="eyebrow mb-6"><span className="gold-line" />Consultoria Imobiliária de Alto Padrão · Limeira</p>
+            <h1 className="font-display uppercase leading-[1.05] tracking-wider text-white text-[26px] sm:text-[38px] md:text-[50px] lg:text-[62px]">
+              Mais do que <span className="font-serif italic normal-case tracking-normal text-gold">imóveis,</span> lugares onde as <span className="font-serif italic normal-case tracking-normal text-gold">melhores memórias</span> são construídas.
             </h1>
             <p className="mt-8 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-              Curadoria estratégica de imóveis premium em condomínios fechados.
-              Mais de 10 anos transformando investimentos em patrimônios extraordinários.
+              Especialista em imóveis premium e condomínios fechados em Limeira.
+            </p>
+            <p className="mt-8 max-w-xl text-base leading-relaxed text-gold/80 sm:text-lg">
+              Transformo a busca pelo imóvel ideal em uma jornada estratégica, segura e alinhada ao estilo de vida, aos valores e aos objetivos da sua família.
+            </p>
+            <p className="mt-8 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+              Porque uma casa não é apenas um endereço. É o cenário onde sua história acontece.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a href="#form" className="btn-primary">Quero Conhecer a Seleção</a>
