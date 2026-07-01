@@ -128,7 +128,7 @@ export default function LandingPage() {
             ))}
           </div>
 
-          <div className="mt-16 border-t border-white/20 pt-16">
+          <div className="mt-20 rounded-lg bg-white/5 p-12 backdrop-blur-sm">
             <h3 className="mb-12 text-center font-display text-2xl uppercase text-white md:text-3xl">
               O que torna esta experiência exclusiva
             </h3>
