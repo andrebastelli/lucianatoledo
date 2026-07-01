@@ -9,7 +9,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* HERO */}
-      <header className="relative h-[100svh] min-h-[640px] overflow-hidden bg-deep">
+      <header className="relative h-[100svh] min-h-[750px] overflow-hidden bg-deep">
         <div className="absolute inset-0">
           <img
             src={heroMansion}
