@@ -178,6 +178,44 @@ export default function LandingPage() {
         </div>
       </section>
 
+
+{/* OFERTA / CTA */}
+      <section id="oferta" className="relative overflow-hidden py-24 md:py-32 bg-deep">
+        <img
+          src={condoEntrance}
+          alt="Entrada de condomínio fechado de alto padrão em Limeira"
+          loading="lazy"
+          width={1600}
+          height={1200}
+          className="absolute inset-0 h-full w-full object-cover opacity-15"
+        />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="eyebrow mb-5 justify-center"><span className="gold-line" />Seleção Exclusiva</p>
+            <h2 className="font-display text-3xl uppercase leading-tight text-white md:text-4xl">
+              Galeria de
+              <span className="block font-serif italic normal-case tracking-normal text-gold">
+                casas selecionadas
+              </span>
+              para você conhecer
+            </h2>
+            <p className="mt-6 text-white/70">
+              Propriedades de alto padrão, curadas pessoalmente. Preencha o formulário para receber os detalhes completos e agendar sua visita.
+            </p>
+
+            <div className="mt-10">
+  <a
+    href="#form"
+    className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-4 text-sm font-semibold uppercase tracking-wide text-deep transition hover:bg-gold/90"
+  >
+    Quero receber os detalhes
+  </a>
+</div>
+          </div>
+        </div>
+      </section>
+
+
 {/* O QUE ACREDITO */}
 <section className="bg-terracotta py-24 md:py-32">
   <div className="mx-auto max-w-6xl px-6">
@@ -234,34 +272,6 @@ export default function LandingPage() {
     </div>
   </div>
 </section>
-
-      {/* OFERTA / GALERIA DE CASAS */}
-      <section id="oferta" className="relative overflow-hidden py-24 md:py-32 bg-deep">
-        <img
-          src={condoEntrance}
-          alt="Entrada de condomínio fechado de alto padrão em Limeira"
-          loading="lazy"
-          width={1600}
-          height={1200}
-          className="absolute inset-0 h-full w-full object-cover opacity-15"
-        />
-        <div className="relative mx-auto max-w-6xl px-6">
-          <div className="mx-auto mb-14 max-w-3xl text-center">
-            <p className="eyebrow mb-5 justify-center"><span className="gold-line" />Seleção Exclusiva</p>
-            <h2 className="font-display text-3xl uppercase leading-tight text-white md:text-4xl">
-              Galeria de
-              <span className="block font-serif italic normal-case tracking-normal text-gold">
-                casas selecionadas
-              </span>
-              para você conhecer
-            </h2>
-            <p className="mt-6 text-white/70">
-              Quatro propriedades de alto padrão, curadas pessoalmente. Navegue pelas fotos e fale comigo no WhatsApp para receber os detalhes completos.
-            </p>
-          </div>
-          <HousesGallery />
-        </div>
-      </section>
 
       {/* FORMULÁRIO */}
       <section id="form" className="bg-background py-24 md:py-32">
@@ -379,7 +389,6 @@ const DIFERENCIAIS = [
     title: 'Seleção Estratégica',
     text: 'Antes de chegar até você, cada oportunidade passa por uma análise criteriosa. Assim, seu tempo é dedicado apenas a imóveis que realmente fazem sentido para sua família e seu patrimônio.',
     icon: (
-      // Funil de filtragem — representa a curadoria/seleção
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 4h18l-7.5 8.5V19l-3 1.5v-8L3 4z" />
       </svg>
@@ -389,7 +398,6 @@ const DIFERENCIAIS = [
     title: 'Segurança na Decisão',
     text: 'Avaliação criteriosa de localização, potencial de valorização, perfil do condomínio e qualidade construtiva.',
     icon: (
-      // Escudo com check — segurança confirmada na decisão
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z" />
         <path d="M9 12l2 2 4-4" />
@@ -400,7 +408,6 @@ const DIFERENCIAIS = [
     title: 'Conexão Humana',
     text: 'Antes de falar sobre imóveis, procuro entender pessoas. Porque o imóvel ideal é consequência da clareza sobre o que realmente importa para você.',
     icon: (
-      // Duas pessoas — relação/conexão humana
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="9" cy="8" r="3" />
         <path d="M3 21v-1c0-3 2.5-5 6-5s6 2 6 5v1" />
@@ -413,7 +420,6 @@ const DIFERENCIAIS = [
     title: 'Visão de Futuro',
     text: 'Não analisamos apenas o imóvel de hoje. Construímos uma decisão que continuará fazendo sentido para você daqui a 5, 10 ou 15 anos.',
     icon: (
-      // Olho no horizonte — visão de longo prazo
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
         <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z" />
         <circle cx="12" cy="12" r="2.5" />
