@@ -178,6 +178,44 @@ export default function LandingPage() {
         </div>
       </section>
 
+
+      {/* OFERTA / CTA */}
+      <section id="oferta" className="relative overflow-hidden py-24 md:py-32 bg-deep">
+        <img
+          src={condoEntrance}
+          alt="Entrada de condomínio fechado de alto padrão em Limeira"
+          loading="lazy"
+          width={1600}
+          height={1200}
+          className="absolute inset-0 h-full w-full object-cover opacity-15"
+        />
+        <div className="relative mx-auto max-w-6xl px-6">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="eyebrow mb-5 justify-center"><span className="gold-line" />Seleção Exclusiva</p>
+            <h2 className="font-display text-3xl uppercase leading-tight text-white md:text-4xl">
+              Galeria de
+              <span className="block font-serif italic normal-case tracking-normal text-gold">
+                casas selecionadas
+              </span>
+              para você conhecer
+            </h2>
+            <p className="mt-6 text-white/70">
+              Quatro propriedades de alto padrão, curadas pessoalmente. Preencha o formulário para receber os detalhes completos e agendar sua visita.
+            </p>
+
+            <div className="mt-10">
+              
+                href="#formulario"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-4 text-sm font-semibold uppercase tracking-wide text-deep transition hover:bg-gold/90"
+              >
+                Quero receber os detalhes
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 {/* O QUE ACREDITO */}
 <section className="bg-terracotta py-24 md:py-32">
   <div className="mx-auto max-w-6xl px-6">
@@ -262,6 +300,8 @@ export default function LandingPage() {
           <HousesGallery />
         </div>
       </section>*/}
+
+
 
       {/* FORMULÁRIO */}
       <section id="form" className="bg-background py-24 md:py-32">
