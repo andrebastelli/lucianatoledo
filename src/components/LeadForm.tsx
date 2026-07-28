@@ -12,24 +12,25 @@ export function LeadForm() {
 
 async function onSubmit(e: FormEvent<HTMLFormElement>) {
   e.preventDefault()
+
   setError('')
 
   const form = e.currentTarget
   const data = Object.fromEntries(new FormData(form).entries())
 
-  // Validação de e-mail
+  // Validação e-mail
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
   if (!emailRegex.test(String(data.email))) {
-    setError('Digite um e-mail válido.')
+    setError('Informe um e-mail válido.')
     return
   }
 
-  // Validação WhatsApp somente números
+  // Validação WhatsApp
   const telefone = String(data.telefone).replace(/\D/g, '')
 
-  if (telefone.length < 10 || telefone.length > 11) {
-    setError('Digite um WhatsApp válido com DDD.')
+  if (telefone.length !== 10 && telefone.length !== 11) {
+    setError('Informe um WhatsApp válido com DDD.')
     return
   }
 
@@ -39,16 +40,23 @@ async function onSubmit(e: FormEvent<HTMLFormElement>) {
     await fetch(SHEETS_ENDPOINT, {
       method: 'POST',
       mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify({
         ...data,
         telefone,
         source: 'lp-lu-toledo',
         ts: new Date().toISOString()
       }),
-    }).catch(() => {})
-  } finally {
+    })
+
     navigate('/obrigado')
+
+  } catch {
+    setError('Não foi possível enviar. Tente novamente.')
+  } finally {
+    setSubmitting(false)
   }
 }
 
