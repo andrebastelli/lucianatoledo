@@ -17,7 +17,7 @@ export function LeadForm() {
     const data = Object.fromEntries(new FormData(form).entries())
 
     try {
-      const res = await fetch(SHEETS_ENDPOINT, {
+      const res = await fetch('/api/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
