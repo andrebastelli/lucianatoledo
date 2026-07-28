@@ -369,7 +369,7 @@ export default function LandingPage() {
         </div>
       </footer>
 
-      <WhatsAppButton />
+      {/* <WhatsAppButton /> */}
     </div>
   )
 }
