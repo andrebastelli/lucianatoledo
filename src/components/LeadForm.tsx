@@ -18,7 +18,6 @@ export function LeadForm() {
     try {
       await fetch(SHEETS_ENDPOINT, {
         method: 'POST',
-        mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...data, source: 'lp-lu-toledo', ts: new Date().toISOString() }),
       }).catch(() => {})
