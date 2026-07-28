@@ -273,31 +273,48 @@ export default function LandingPage() {
   </div>
 </section>
 
-      {/* FORMULÁRIO */}
-      <section id="form" className="bg-background py-24 md:py-32">
-        <div className="mx-auto grid max-w-6xl gap-16 px-6 md:grid-cols-[1fr_1.2fr]">
-          <div>
-            <p className="eyebrow mb-5"><span className="gold-line" />CHAMADA FINAL</p>
-            <h2 className="text-3xl uppercase leading-tight md:text-4xl">
-              Seu próximo capítulo merece
-              <span className="block font-serif italic normal-case tracking-normal text-terracotta">
-                o cenário certo.
-              </span>
-            </h2>
-            <div className="hairline my-8 max-w-[120px]" />
-            <p className="text-muted-foreground">
-              Vamos encontrar um imóvel que represente seus valores, seus sonhos e o futuro que você deseja construir.
-            </p>
-            <div className="mt-10 space-y-3 text-sm text-muted-foreground">
-              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> Mais do que imóveis, lugares onde as melhores memórias são construídas.</p>
-              <p className="flex items-center gap-3"><span className="h-px w-6 bg-gold" /> WhatsApp • Atendimento Personalizado</p>
-            </div>
-          </div>
-          <div className="bg-card p-8 shadow-soft md:p-12">
-            <LeadForm />
-          </div>
-        </div>
-      </section>
+{/* FORMULÁRIO */}
+<section id="form" className="bg-background py-24 md:py-32">
+  <div className="mx-auto grid max-w-7xl gap-16 px-6 md:grid-cols-[0.9fr_1.5fr]">
+    
+    <div>
+      <p className="eyebrow mb-5">
+        <span className="gold-line" />CHAMADA FINAL
+      </p>
+
+      <h2 className="text-3xl uppercase leading-tight md:text-4xl">
+        Seu próximo capítulo merece
+        <span className="block font-serif italic normal-case tracking-normal text-terracotta">
+          o cenário certo.
+        </span>
+      </h2>
+
+      <div className="hairline my-8 max-w-[120px]" />
+
+      <p className="text-muted-foreground">
+        Vamos encontrar um imóvel que represente seus valores, seus sonhos e o futuro que você deseja construir.
+      </p>
+
+      <div className="mt-10 space-y-3 text-sm text-muted-foreground">
+        <p className="flex items-center gap-3">
+          <span className="h-px w-6 bg-gold" /> 
+          Mais do que imóveis, lugares onde as melhores memórias são construídas.
+        </p>
+
+        <p className="flex items-center gap-3">
+          <span className="h-px w-6 bg-gold" /> 
+          WhatsApp • Atendimento Personalizado
+        </p>
+      </div>
+    </div>
+
+    {/* FORMULÁRIO MAIOR */}
+    <div className="bg-card p-10 shadow-soft md:p-16">
+      <LeadForm />
+    </div>
+
+  </div>
+</section>
 
       {/* FOOTER */}
       <footer className="bg-deep py-16 text-white/80">
