@@ -27,12 +27,12 @@ async function onSubmit(e: FormEvent<HTMLFormElement>) {
   }
 
   // Validação WhatsApp
-  const telefone = String(data.telefone).replace(/\D/g, '')
+  const telefone = String(data.telefone)
 
-  if (telefone.length !== 10 && telefone.length !== 11) {
-    setError('Informe um WhatsApp válido com DDD.')
-    return
-  }
+if (!/^\d{10,11}$/.test(telefone)) {
+  setError('Digite um WhatsApp válido com DDD (10 ou 11 números).')
+  return
+}
 
   setSubmitting(true)
 
@@ -60,6 +60,10 @@ async function onSubmit(e: FormEvent<HTMLFormElement>) {
   }
 }
 
+function onlyNumbers(value: string) {
+  return value.replace(/\D/g, '').slice(0, 11)
+}
+
 return (
   <form onSubmit={onSubmit} className="grid gap-7">
     
@@ -81,7 +85,18 @@ return (
     <div className="grid gap-7 sm:grid-cols-2">
       <label className="block">
         <span className="eyebrow block mb-1">WhatsApp</span>
-        <input name="telefone" required type="tel" className="luxe-input" placeholder="(19) 9 0000-0000" />
+        <input
+          name="telefone"
+          required
+          type="tel"
+          inputMode="numeric"
+          maxLength={11}
+          className="luxe-input"
+          placeholder="19999999999"
+          onChange={(e) => {
+            e.target.value = onlyNumbers(e.target.value)
+          }}
+        />
       </label>
 
       <label className="block">
