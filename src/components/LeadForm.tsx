@@ -58,14 +58,22 @@ export function LeadForm() {
           <span className="eyebrow block mb-1">Tipo de Imóvel</span>
           <select name="tipo" required className="luxe-input">
             <option value="">Selecione</option>
-            <option>Casa em Condomínio Fechado</option>
-            <option>Mansão / Alto Padrão</option>
-            <option>Apartamento de Cobertura</option>
-            <option>Terreno Premium</option>
-            <option>Investimento / Locação</option>
+            <option>Casa</option>
+            <option>Apartamento</option>
+            <option>Outro</option>
           </select>
         </label>
       </div>
+      <div className="grid gap-7 sm:grid-cols-2">
+  <label className="block">
+    <span className="eyebrow block mb-1">Objetivo</span>
+    <select name="objetivo" required className="luxe-input">
+      <option value="">Selecione</option>
+      <option value="Morar">Morar</option>
+      <option value="Investir">Investir</option>
+    </select>
+  </label>
+</div>
 
       <button type="submit" disabled={submitting} className="btn-primary mt-4 w-full sm:w-auto">
         {submitting ? 'Enviando...' : 'AGENDAR CONSULTORIA EXCLUSIVA'}
