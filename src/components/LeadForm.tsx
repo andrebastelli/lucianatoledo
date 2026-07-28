@@ -8,24 +8,49 @@ const SHEETS_ENDPOINT =
 export function LeadForm() {
   const navigate = useNavigate()
   const [submitting, setSubmitting] = useState(false)
+  const [error, setError] = useState('')
 
-  async function onSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    setSubmitting(true)
-    const form = e.currentTarget
-    const data = Object.fromEntries(new FormData(form).entries())
+async function onSubmit(e: FormEvent<HTMLFormElement>) {
+  e.preventDefault()
+  setError('')
 
-    try {
-      await fetch(SHEETS_ENDPOINT, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, source: 'lp-lu-toledo', ts: new Date().toISOString() }),
-      }).catch(() => {})
-    } finally {
-      navigate('/obrigado')
-    }
+  const form = e.currentTarget
+  const data = Object.fromEntries(new FormData(form).entries())
+
+  // Validação de e-mail
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+  if (!emailRegex.test(String(data.email))) {
+    setError('Digite um e-mail válido.')
+    return
   }
+
+  // Validação WhatsApp somente números
+  const telefone = String(data.telefone).replace(/\D/g, '')
+
+  if (telefone.length < 10 || telefone.length > 11) {
+    setError('Digite um WhatsApp válido com DDD.')
+    return
+  }
+
+  setSubmitting(true)
+
+  try {
+    await fetch(SHEETS_ENDPOINT, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        ...data,
+        telefone,
+        source: 'lp-lu-toledo',
+        ts: new Date().toISOString()
+      }),
+    }).catch(() => {})
+  } finally {
+    navigate('/obrigado')
+  }
+}
 
 return (
   <form onSubmit={onSubmit} className="grid gap-7">
@@ -52,7 +77,7 @@ return (
       </label>
 
       <label className="block">
-        <span className="eyebrow block mb-1">Faixa Investimento</span>
+        <span className="eyebrow block mb-1">Faixa de Investimento</span>
         <select name="faixa" required className="luxe-input">
           <option value="">Selecione</option>
           <option>R$ 1M – R$ 2M</option>
