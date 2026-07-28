@@ -235,7 +235,7 @@ export default function LandingPage() {
   </div>
 </section>
 
-      {/* OFERTA / GALERIA DE CASAS */}
+      {/* OFERTA / GALERIA DE CASAS 
       <section id="oferta" className="relative overflow-hidden py-24 md:py-32 bg-deep">
         <img
           src={condoEntrance}
@@ -261,7 +261,7 @@ export default function LandingPage() {
           </div>
           <HousesGallery />
         </div>
-      </section>
+      </section>*/}
 
       {/* FORMULÁRIO */}
       <section id="form" className="bg-background py-24 md:py-32">
