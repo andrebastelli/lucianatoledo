@@ -9,10 +9,10 @@ export default defineConfig({
     },
   },
   server: {
-    allowedHosts: [
-      '.vercel.run',
-      'localhost',
-      '127.0.0.1',
-    ],
+    allowedHosts: 'all',
+    hmr: {
+      clientPort: 443,
+      protocol: 'wss',
+    },
   },
 })
