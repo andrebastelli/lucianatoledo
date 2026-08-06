@@ -9,7 +9,7 @@ export default function ObrigadoPage() {
   }, [])
 
   return (
-    <div className="relative flex min-h-screen items-center justify-center bg-deep px-6 py-20 text-white">
+    <div className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-deep px-6 py-20 text-white">
       <div
         className="absolute inset-0 opacity-30"
         style={{
