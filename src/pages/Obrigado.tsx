@@ -25,8 +25,8 @@ export default function ObrigadoPage() {
         </div>
         <p className="eyebrow mb-5 justify-center">Solicitação Recebida</p>
         <h1 className="font-display text-3xl uppercase leading-tight md:text-5xl">
-          Obrigada pela
-          <span className="block font-serif italic normal-case tracking-normal text-gold">confiança.</span>
+          Pré-cadastro feito
+          <span className="block font-serif italic normal-case tracking-normal text-gold">com sucesso.</span>
         </h1>
         <p className="mt-8 text-lg leading-relaxed text-white/80">
           Inicie seu atendimento tocando no botão abaixo.
