@@ -1,9 +1,7 @@
-const PHONE = import.meta.env.VITE_WHATSAPP_PHONE || '5519974159585'
-const MESSAGE =
-  'Olá! Vi a página sobre imóveis de alto padrão em Limeira e quero saber mais sobre as propriedades disponíveis.'
+const WHATSAPP_HREF = 'https://api.whatsapp.com/send/?phone=5519974159585&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Estava%20no%20site%20e%20quero%20saber%20mais%20sobre%20os%20im%C3%B3veis'
 
 export function WhatsAppButton() {
-  const href = `https://wa.me/${PHONE}?text=${encodeURIComponent(MESSAGE)}`
+  const href = WHATSAPP_HREF
   return (
     <a
       href={href}

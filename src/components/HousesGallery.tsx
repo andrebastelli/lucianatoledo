@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const PHONE = import.meta.env.VITE_WHATSAPP_PHONE || '5519974159585'
+const WHATSAPP_BASE = 'https://api.whatsapp.com/send/?phone=5519974159585'
 
 type House = {
   id: string
@@ -121,7 +121,7 @@ function Carousel({ images, alt }: { images: string[]; alt: string }) {
 
 function whatsappHref(h: House) {
   const msg = `Olá, Lu! Tenho interesse na *${h.title}* (${h.subtitle}). Gostaria de receber mais detalhes desta propriedade.`
-  return `https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`
+  return `${WHATSAPP_BASE}&text=${encodeURIComponent(msg)}`
 }
 
 export function HousesGallery() {
