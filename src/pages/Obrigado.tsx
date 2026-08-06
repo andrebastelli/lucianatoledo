@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { WhatsAppButton } from '@/components/WhatsAppButton'
 
-const PHONE = import.meta.env.VITE_WHATSAPP_PHONE || '5519974159585'
+const WHATSAPP_HREF = 'https://api.whatsapp.com/send/?phone=5519974159585&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Estava%20no%20site%20e%20quero%20saber%20mais%20sobre%20os%20im%C3%B3veis'
 
 export default function ObrigadoPage() {
   useEffect(() => {
@@ -37,7 +37,7 @@ export default function ObrigadoPage() {
         <p className="text-sm uppercase tracking-[0.3em] text-white/60">Enquanto isso</p>
         <div className="mt-6 flex flex-wrap justify-center gap-4">
           <a
-            href={`https://wa.me/${PHONE}?text=${encodeURIComponent('Olá Lu! Acabei de me cadastrar na sua página.')}`}
+            href={WHATSAPP_HREF}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
