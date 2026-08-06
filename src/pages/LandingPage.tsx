@@ -50,10 +50,11 @@ export default function LandingPage() {
 
         <div className="relative z-10 mx-auto flex h-[calc(100%-96px)] max-w-7xl flex-col justify-center px-6 pb-16 sm:pb-0">
   <div className="max-w-3xl md:max-w-5xl fade-up">
+    <h1 className="sr-only">Imóveis de Alto Padrão em Limeira</h1>
     <p className="eyebrow mb-6"><span className="gold-line" />Consultoria Imobiliária de Alto Padrão</p>
-<h1 className="font-display text-4xl uppercase leading-[1.05] tracking-wider text-white sm:text-5xl md:text-6xl lg:text-7xl">
+<p className="font-display text-4xl uppercase leading-[1.05] tracking-wider text-white sm:text-5xl md:text-6xl lg:text-7xl">
   Mais do que <span className="font-serif italic normal-case tracking-normal text-gold">imóveis,</span> lugares onde as <span className="font-serif italic normal-case tracking-normal text-gold sm:whitespace-nowrap"> melhores memórias</span> <span className="sm:whitespace-nowrap">são construídas.</span>
-</h1>
+</p>
     <p className="mt-8 max-w-xl md:max-w-4xl text-base leading-relaxed text-white/80 sm:text-lg">
       Especialista em imóveis premium e condomínios fechados em Limeira.
       Transformo a busca pelo imóvel ideal em uma jornada estratégica, segura e alinhada ao estilo de vida, aos valores e aos objetivos da sua família.

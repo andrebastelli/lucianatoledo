@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { WhatsAppButton } from '@/components/WhatsAppButton'
 
 const PHONE = import.meta.env.VITE_WHATSAPP_PHONE || '5519974159585'
@@ -26,15 +25,13 @@ export default function ObrigadoPage() {
         </div>
         <p className="eyebrow mb-5 justify-center">Solicitação Recebida</p>
         <h1 className="font-display text-3xl uppercase leading-tight md:text-5xl">
-          Obrigada pela
-          <span className="block font-serif italic normal-case tracking-normal text-gold">confiança.</span>
+          Pré-cadastro feito
+          <span className="block font-serif italic normal-case tracking-normal text-gold">com sucesso.</span>
         </h1>
         <p className="mt-8 text-lg leading-relaxed text-white/80">
-          Recebemos suas informações! <strong className="text-white">Lu Toledo entrará em contato em até 2 horas</strong> via
-          WhatsApp com sua curadoria personalizada de imóveis premium em Limeira.
+          Inicie seu atendimento tocando no botão abaixo.
         </p>
         <div className="hairline mx-auto my-12 max-w-[140px]" />
-        <p className="text-sm uppercase tracking-[0.3em] text-white/60">Enquanto isso</p>
         <div className="mt-6 flex flex-wrap justify-center gap-4">
           <a
             href={`https://wa.me/${PHONE}?text=${encodeURIComponent('Olá Lu! Acabei de me cadastrar na sua página.')}`}
@@ -44,7 +41,6 @@ export default function ObrigadoPage() {
           >
             Falar Agora no WhatsApp
           </a>
-          <Link to="/" className="btn-ghost">Voltar ao Início</Link>
         </div>
       </div>
       <WhatsAppButton />
