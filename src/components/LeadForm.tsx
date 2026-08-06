@@ -134,7 +134,7 @@ return (
     </div>
 
     <button type="submit" disabled={submitting} className="btn-primary mt-4 w-full sm:w-auto">
-      {submitting ? 'Enviando...' : 'AGENDAR CONSULTORIA EXCLUSIVA'}
+      {submitting ? 'Enviando...' : 'INICIAR PRÉ ATENDIMENTO VIA WHATSAPP'}
     </button>
 
     <p className="text-xs text-muted-foreground">
